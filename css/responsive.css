@@ -1,0 +1,39 @@
+@media screen and (max-width: 40em) {
+  /* Fix the demo page container to be responsive */
+  .LayoutGrid {
+    width: auto;
+    max-width: 900px;
+  }
+
+  .accessible-megamenu {
+    position: static;
+    height: auto;
+  }
+  .accessible-megamenu .accessible-megamenu-top-nav-item,
+  .accessible-megamenu .accessible-megamenu-panel,
+  .accessible-megamenu .accessible-megamenu-panel > ol > li {
+    width: 100%;
+    float: none;
+  }
+  .accessible-megamenu .accessible-megamenu-top-nav-item {
+    height: auto;
+    position: static;
+  }
+  .accessible-megamenu .accessible-megamenu-top-nav-item a[aria-haspopup] {
+    position: static;
+  }
+  .accessible-megamenu .accessible-megamenu-panel {
+    position: relative;
+    left: 0;
+  }
+  .accessible-megamenu .accessible-megamenu-panel.open {
+    position: static;
+    width: 96%;
+    max-height: none;
+    padding: 2%;
+  }
+  .accessible-megamenu .accessible-megamenu-panel[class^='cols-'] > ol > li {
+    width: 100%;
+    float: none;
+  }
+}
